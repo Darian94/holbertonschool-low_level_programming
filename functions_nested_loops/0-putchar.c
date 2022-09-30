@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - librery
+ * main - librery
  * Return: 0 (success)
  */
 
