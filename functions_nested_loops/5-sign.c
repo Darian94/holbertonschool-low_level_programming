@@ -4,6 +4,7 @@
  * print_sign - librery main.h
  * @n: The character to be checked
  * Return: 1 if it is positive, -1 if it is negative and otherwise 0
+ * _putchar +,_,0
  */
 
 int print_sign(int n)
@@ -20,7 +21,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar (0);
+		_putchar ('0');
 		return (0);
 	}
 }
