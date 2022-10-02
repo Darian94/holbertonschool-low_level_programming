@@ -3,9 +3,7 @@
 /**
  * print_sign - librery main.h
  * @n: The character to be checked
- * Return: 1 if is greater than zero
- * Return: -1 if is less than zero
- * Return: 0 if is zero
+ * Return: 1 if it is positive, -1 if it is negative and otherwise 0
  */
 
 int print_sign(int n)
@@ -14,7 +12,7 @@ int print_sign(int n)
 	{
 		_putchar ('+');
 		return (1);
-	{
+	}
 	else if (n < 0)
 	{
 		_putchar ('-');
