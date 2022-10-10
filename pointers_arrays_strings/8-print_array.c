@@ -2,7 +2,7 @@
 
 /**
  * print_array - check the code
- * @a: pointer 
+ * @a: pointer
  * @n: number
  * Return: void
  */
