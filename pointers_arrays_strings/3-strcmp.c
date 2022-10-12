@@ -2,8 +2,9 @@
 
 /**
  *_strcmp - compares two strings
- * @s1: pointer
- * @s2: pointer
+ *@s1: pointer
+ *@s2: pointer
+ * Return: always
  */
 
 int _strcmp(char *s1, char *s2)
