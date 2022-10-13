@@ -1,23 +1,19 @@
 #include "main.h"
-
 /**
- * print_array - check the code
- * @a: pointer
- * @n: number
+ * print_diagsums - sum of the two diagonals of a square matrix of integers
+ * @a: pointer to the two-dimensional diagonal
+ * @size: diagonal size
  */
-
-void print_array(int *a, int n)
+void print_diagsums(int *a, int size)
 {
-	int i;
-	int l = n - 1;
+	int main = 0;
+	int second = 0;
+	int i = 0;
 
-	for (i = 0; i < n ; i++)
+	for (i = 0; i < size; i++)
 	{
-		printf("%d", a[i]);
-		if (i < l)
-		{
-			printf(", ");
-		}
+		main += a[(i * size) + i];
+		second += a[(size * (i + 1)) - (i + 1)];
 	}
-	printf("\n");
+	printf("%d, %d\n", main, second);
 }
