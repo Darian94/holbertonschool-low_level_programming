@@ -32,12 +32,12 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 		}
+	}
 	if (l == _strlen(needle))
 	{
 		return (haystack + i);
+		return (NULL);
 	}
-	}
-	return (NULL);
 }
 
 /**
