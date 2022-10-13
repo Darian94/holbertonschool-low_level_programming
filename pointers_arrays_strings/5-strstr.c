@@ -1,57 +1,50 @@
 #include "main.h"
-#include <stdio.h>
-
+int _strncmp(char *s1, char *s2, int n);
 /**
- *_strstr - finds a substring
- *@haystack: string to be searched
- *@needle: string to search
- *Return: pointer to string start
+ * _strstr- locates a substring
+ * @haystack: pointer to the string
+ * @needle: pointer to the substring
+ *
+ * Return: position of the found substring, NULL substring is not found.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int k = 0;
-	int l = 0;
+	char *aux = haystack;
 
-	if (needle[0] == '\0')
+	for (; *aux; aux++)
 	{
-		return (haystack);
+		if (_strncmp(aux, needle, _strlen(needle)) == 0)
+			return (aux);
 	}
-	for (i = 0; haystack[i]; i++)
-	{
-		if (haystack[i] == needle[0])
-		{
-			while (haystack[i + k] == needle[k])
-			{
-				k++;
-				l++;
-			}
-			if (l == _strlen(needle))
-			{
-				break;
-			}
-		}
-	}
-	if (l == _strlen(needle))
-	{
-		return (haystack + i);
-		return (NULL);
-	}
+	return (NULL);
 }
-
 /**
- *_strlen - prints
- *@s: string
- *Return: int
+ * _strncmp - compares two strings
+ * @s1: pointer to the compared string
+ * @s2: pointer to comparison strin
+ * @n: s2 elements
+ *
+ * Return: difference of characters in their ASCII numeric value or 0 if equal
+ */
+int _strncmp(char *s1, char *s2, int n)
+{
+	int i = 0;
+
+	for (; i < n && s1[i] && s2[i]; i++)
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+	return (0);
+}
+/**
+ * _strlen - returns the length of a string
+ * @s: pinter to addres os strign
+ * Return: all elements of the stirng
  */
 int _strlen(char *s)
 {
-	int i;
+	int count = 0;
 
-	while (*(s + i))
-	{
-		i++;
-	}
-	return (i);
+	for (; s[count]; count++)
+		;
+	return (count);
 }
