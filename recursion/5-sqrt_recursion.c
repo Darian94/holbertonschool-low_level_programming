@@ -3,7 +3,7 @@
 /**
  * _sqrt_recursion1 - function that gets de num of _sqrt_recursion
  * @a: same number as n
- * @b: number between 1 and n
+ * @b: number that goes from 1 to n
  * Return: b, -1
  */
 
