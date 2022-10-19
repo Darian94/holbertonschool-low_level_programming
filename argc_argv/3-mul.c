@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
+
 /**
  * main - prints the number of arguments passed into it.
  * @argc: argument count
  * @argv: argument list
- * Return: an int
+ * Return: 1 is error, 0 is correct 
  */
 
 int main(int argc, char **argv)
@@ -14,11 +14,14 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(EXIT_FAILURE);
+		return (1);
 	}
+
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 	rslt = num1 * num2;
+
 	printf("%d\n", rslt);
-	exit(EXIT_SUCCESS);
+
+	return (0);
 }

@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	if (argc)	
+	if (argc)
 		printf("%s\n", *argv);
-	return(0);
+	return (0);
 }
