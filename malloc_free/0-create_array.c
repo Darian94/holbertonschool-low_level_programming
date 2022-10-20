@@ -2,7 +2,7 @@
 
 /**
  * *create_array - function that creates an array of chars
- * @size - variable that assigns the size of a char
+ * @size: variable that assigns the size of a char
  * @c: character
  * Return: NULL , arr
  */
