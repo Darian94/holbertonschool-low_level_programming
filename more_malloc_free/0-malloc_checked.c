@@ -15,7 +15,7 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 	}
 
-	point = malloc(sizeof(b));
+	point = malloc(b);
 
 	if (point == NULL)
 	{
