@@ -5,6 +5,7 @@
  * @s1: pointer ferst string
  * @s2: pointer second string
  * @n: the first n bytes of s2
+ * Return: NULL is fail, s3 successful
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -41,6 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s3[c + d] = s2[d];
 	}
+	s3[a + b] = '\0';
 	return (s3);
 }
 
