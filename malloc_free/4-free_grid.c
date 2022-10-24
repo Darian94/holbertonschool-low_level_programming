@@ -4,6 +4,7 @@
  * free_grid - frees a greed
  * @grid: grid to free
  * @height: height of the grid
+ * return: void
  */
 
 void free_grid(int **grid, int height)
@@ -19,5 +20,4 @@ void free_grid(int **grid, int height)
 		}
 		free(grid);
 	}
-}	
-
+}
