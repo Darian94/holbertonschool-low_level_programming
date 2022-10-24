@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * malloc_checked - save memory depending of the type
+ * malloc_checked - allocates memory depending of the type
  * @b: length of the array
  * return: p on success, 98 on fail
  */
