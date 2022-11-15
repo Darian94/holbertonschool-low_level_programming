@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 
 /**
  * print_all - Prints all formats
