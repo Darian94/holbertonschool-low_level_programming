@@ -5,22 +5,20 @@
  * @h: pointer to the first struct of the list
  * Return: i
  */
-
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
 	int i = 0;
 	const listint_t *list;
 
 	if (h == NULL)
-		return(i);
+		return (i);
 
-	*list = h;
-	while(list != NULL)
+	list = h;
+	while (list != NULL)
 		{
-			printf("%d/n", list->n);
-			i++
-			lisy = list->next;
+			printf("%d\n", list->n);
+			i++;
+			list = list->next;
 		}
 	return (i);
 }
-
