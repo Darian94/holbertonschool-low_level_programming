@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * read_textfike - reads a text file and prints
- * @filename - name of the file to read
+ * read_textfile - reads a text file and prints
+ * @filename: name of the file to read
  * @letters: number of character to print
  * Return: on success the number of characyers printed, -1 or 0 if it fails
  */
