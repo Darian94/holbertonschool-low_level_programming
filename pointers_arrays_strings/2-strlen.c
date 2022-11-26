@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen - check the code
- * @s: pointer
- * Return: n
+ * _strlen - function than retunr the length of a text string
+ * @s: pointer to the adress of the string
+ * Return: all elements of the string
  */
 
 int _strlen(char *s)
