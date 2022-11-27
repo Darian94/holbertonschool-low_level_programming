@@ -5,7 +5,7 @@
  * @argc: argument counter
  * @argv: argument vector
  * Return: 1 is success and -1 on failure
- * In 22 and 30, i put 2 instead of STDERR_FILENO because i pass caractr permis
+ * In 22 line, i put 2 instead of STDERR_FILENO because i pass caracter permiss
  */
 
 int main(int argc, char *argv[])
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	if (!argv[1])
-		dprintf(2, "Error: Can't read from file \n"), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file \n"), exit(98);
 	fd_old = open(argv[1], O_RDONLY);
 	if (fd_old == -1)
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
