@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	while (r != 0)
 	{
 		if (r == -1)
-			dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 		w = write(fd_new, buffer, r);
 		if (w == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
