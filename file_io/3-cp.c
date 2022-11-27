@@ -19,16 +19,16 @@ int main(int argc, char *argv[])
 	}
 	if (!argv[1])
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file_from\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file \n");
 		exit(98);
 	}
 	fd_old = open(argv[1], O_RDONLY);
 	if (fd_old == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file_from %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd_new = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	fd_new = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 664);
 	if (fd_new == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
