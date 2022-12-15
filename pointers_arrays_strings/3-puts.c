@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - check the code
+ * _puts - function than print a string
  * @str: pointer
  */
 
