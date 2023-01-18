@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_to_98 - check the code
+ * print_to_98 - print 0 to 98
  * @n: number
  */
 
