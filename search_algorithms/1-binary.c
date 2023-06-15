@@ -1,4 +1,6 @@
-#include "sort.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * binary_search - searches for a value in a sorted array of integers
